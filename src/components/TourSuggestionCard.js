@@ -1,9 +1,12 @@
 import React from "react";
-import '../css/LandingPage.css';
+import {TextBig, TextMedium, TextSmall} from "../styledComponents/BasicStyledComponets";
+import {TourSuggestionCardContent, TourSuggestionsCard} from "../styledComponents/TourSuggestionsStyledComponents";
 
 export const TourSuggestionCard = ({tour}) =>
-	<div className="bookTourSuggestionsTours">
-		<h4>{tour.name}</h4>
-		<h5>{tour.city}</h5>
-		<h5>Locations: {tour.locations.length}</h5>
-	</div>;
+	<TourSuggestionsCard img='../staticContent/mqdefault.jpg'>
+		<TourSuggestionCardContent>
+			<TextMedium>Discover</TextMedium>
+			<TextBig fontWeight='bold'>{tour.city}</TextBig>
+			<TextSmall align='right'>Locations: {tour.locations.length}</TextSmall>
+		</TourSuggestionCardContent>
+	</TourSuggestionsCard>;
