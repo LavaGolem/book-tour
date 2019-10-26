@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 //Gradive elements components
 export const PageHeader = styled.div`
 	display: flex;
@@ -6,39 +7,29 @@ export const PageHeader = styled.div`
   flex-direction: column;
 `;
 
-
 // Text components
-export const TextMedium = styled.div`
-font-size: 18px;
+export const Text = styled.div`
 text-align: ${props => props.align};
 font-weight: ${props => props.fontWeight};
 `;
 
-export const TextBig = styled.div`
-font-size: 36px;
-text-align: ${props => props.align};
-font-weight: ${props => props.fontWeight};
-`;
-
-export const TextSuperBig = styled.div`
-font-size: 42px;
-text-align: ${props => props.align};
-font-weight: ${props => props.fontWeight};
-`;
-
-export const TextSmall = styled.div`
-font-size: 14px;
-text-align: ${props => props.align};
-font-weight: ${props => props.fontWeight};
-`;
-
-let defaultProps = {
+Text.defaultProps = {
 	align: 'left',
 	fontWeight: 'normal'
 };
 
-TextMedium.defaultProps = defaultProps;
+export const TextMedium = styled(Text)`
+font-size: 18px;
+`;
 
-TextSmall.defaultProps = defaultProps;
+export const TextBig = styled(Text)`
+font-size: 36px;
+`;
 
-TextBig.defaultProps = defaultProps;
+export const TextSuperBig = styled(Text)`
+font-size: 42px;
+`;
+
+export const TextSmall = styled(Text)`
+font-size: 14px;
+`;

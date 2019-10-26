@@ -1,8 +1,9 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
+import {SearchToursStyledComponent} from "../styledComponents/TourSuggestionsStyledComponents";
 
 export const SearchTours = () =>
-	<div className="searchBookTour">
+	<SearchToursStyledComponent>
 		{/*<Input type={"search"}></Input>*/}
 		<TextField
 			id="standard-full-width"
@@ -16,4 +17,4 @@ export const SearchTours = () =>
 				shrink: true,
 			}}
 		/>
-	</div>;
+	</SearchToursStyledComponent>;

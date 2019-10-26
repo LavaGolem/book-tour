@@ -1,10 +1,14 @@
 import React from "react";
 import {TourSuggestionCard} from "./TourSuggestionCard";
-import {BookTourSuggestions, BookTourSuggestionsContent} from "../styledComponents/TourSuggestionsStyledComponents";
+import {
+	BookTourSuggestions,
+	BookTourSuggestionsContent,
+	TourSuggestions
+} from "../styledComponents/TourSuggestionsStyledComponents";
 import {TextMedium} from "../styledComponents/BasicStyledComponets";
 
 export const TourSuggestion = ({tours, name}) =>
-	<div>
+	<TourSuggestions>
 		<TextMedium align='left'>{name}</TextMedium>
 		<BookTourSuggestions>
 			<BookTourSuggestionsContent>
@@ -13,5 +17,5 @@ export const TourSuggestion = ({tours, name}) =>
 				}
 			</BookTourSuggestionsContent>
 		</BookTourSuggestions>
-	</div>;
+	</TourSuggestions>;
 

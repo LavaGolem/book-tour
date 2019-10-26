@@ -7,7 +7,7 @@ import {PageHeader, TextBig, TextSuperBig} from "../styledComponents/BasicStyled
 export const LandingPage = ({tours}) =>
 	<div>
 		<PageHeader>
-			<TextSuperBig>{LANDING_PAGE_TITLE}</TextSuperBig>
+			<TextSuperBig align='middle'>{LANDING_PAGE_TITLE}</TextSuperBig>
 			<TextBig align='middle'>{LANDING_PAGE_SUBTITLE}</TextBig>
 		</PageHeader>
 		<SearchTours/>
